@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --mainTextColor-light:#000;
+    --secondaryTextColor-light:rgb(51 51 51);
+    --mainLinkColor-light:#0da2b8;
+    --mainBorderColor-light:rgb(218, 218, 218);
+    --mainBgColor-light:rgb(249, 250,251);
+    
+    --mainTextColor:var(--mainTextColor-light);
+    --secondaryTextColor:var(--secondaryTextColor-light);
+    --mainLinkColor:var(--mainLinkColor-light);
+    --mainBorderColor:var(--mainBorderColor-light);
+    --mainBgColor:var(--mainBgColor-light);
+
+}
+
+
+*{
+    font-family: 'Readex Pro';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+    
+}
+
+body{
+    background-color: var(--mainBgColor);            
+}
+
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a{
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+
+li{
+    line-height: 1.9em;
+}
+
+#name--1{
+        font-size: 1.75em;
+        line-height: 1em;
+}
+
+#container--main{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0em;
+}
+
+.section--page{
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#wrapper--hero{
+    display: flex;
+    align-items: Left;
+    gap: 4em;
+}
+
+#bio, a{
+    font-weight: 300;
+}
+
+#username{
+    font-size: 2em;
+    line-height: 1em;
+}
+
+#profile-pic{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+#email{
+    color: var(--mainTextColor);
+}
+#socials-list{
+    column-gap: 1em;
+    flex-wrap: wrap;
+    
+}
+
+#socials-list a{
+    font-weight: 300;
+    color: var(--mainLinkColor);
+    font-size: 0.9em;
+}
+
+#socials-list a:hover{
+    color: var(--secondaryTextColor);
+}
+
+
+#qualifications-list{
+    list-style: circle;
+}
+
+#wrapper--techstack__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack{
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+
+.card--project{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColor);
+}
+
+.card--project a{
+    color: var(--mainTextColor);
+
+    transition: 0.3s;
+}
+
+.card--project a:hover{
+    color: rgb(30, 190,214);
+
+}
+
+.card--work-history{
+    border-left: 1px solid var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+
+.line-break{
+    background-color: var(--mainBorderColor);
+    height: 2px;
+}
+
+
+@media(max-width:600px){
+
+    .section--page{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #wrapper--hero{
+        display: flex;
+        align-items: left;
+        gap: 1em;
+    }
+
+    #profile-pic{
+        width: 200px;
+        height: 200px;
+    }
+
+    #wrapper--hero{
+        flex-direction: column;
+    }
+
+    .card--work-history{
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
+#Identification{
+    list-style: circle;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.skill-percentage {
+    margin-bottom:10px;
+    position:relative;
+    &::after {
+      content:"";
+      width:100%;
+      height:6px;
+      background:#F05039;
+      display:block;
+      margin-top:3px;
+    }
+    &::before{
+      content:"";
+      height:6px;
+      background: #1f449c;
+      position:absolute;
+      margin-top:3px;
+      bottom:0;
+    }
+    &:nth-child(1)::before {width:80%;animation: skill_1;}
+    &:nth-child(2)::before {width:55%; animation: skill_2;} 
+    &:nth-child(3)::before {width:35%;animation: skill_3 ;}
+    &:nth-child(4)::before {width:80%;animation: skill_4 ;}
+    &:nth-child(5)::before {width:75%;animation: skill_5 ;}
+    &:nth-child(6)::before {width:85%;animation: skill_6 ;}
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 0px;
+  }
+  .left {
+    width: 40%;
+  }
+  .right {
+    width: 60%;
+  }
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .column2 {
+    float: left;
+    width: 50%;
+    padding: 1px;
+  }
+  .left {
+    width: 40%;
+  }
+  .right {
+    width: 60%;
+  }
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
